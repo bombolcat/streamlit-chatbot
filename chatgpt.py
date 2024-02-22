@@ -1,12 +1,15 @@
 from openai import OpenAI
 from langchain.agents.openai_assistant import OpenAIAssistantRunnable
 from langchain.agents import AgentExecutor
+from dotenv import load_dotenv
+import os
+load_dotenv()
 tools=[]
 
 
 class Chatbot():
     def __init__(self):
-        self.openaikey="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"
+        self.openaikey=os.getenv("OPENAI_API_KEY")
         self.client = OpenAI(api_key=self.openaikey)
     
     def generatereponse(self,user_id:int,question:str,threadid:str=None,model="gpt-4-0125-preview",relation="mother",name="soham")->str:
