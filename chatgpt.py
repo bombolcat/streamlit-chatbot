@@ -6,7 +6,7 @@ tools=[]
 
 class Chatbot():
     def __init__(self):
-        self.openaikey="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"
+        self.openaikey="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"
         self.client = OpenAI(api_key=self.openaikey)
     
     def generatereponse(self,user_id:int,question:str,threadid:str=None,model="gpt-4-0125-preview",relation="mother",name="soham")->str:
