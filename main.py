@@ -2,7 +2,7 @@ import streamlit as st
 from chatgpt import Chatbot
 chatbot=Chatbot()
 
-st.title("Quiz helper")
+st.title("Pickup Lines :heart:")
 
 # Initialize chat history
 if "messages" not in st.session_state:
