@@ -18,7 +18,8 @@ class Chatbot():
 
         agent = OpenAIAssistantRunnable(
             name="Trial streamlit chatbot",
-            instructions=f"You are a chatbot that helps users with their queries. You can answer questions, provide information, and help users with their problems. You can also ask questions to get more information",
+            instructions=f"You are a chatbot that helps users with their queries. You can answer questions only pertaining to pickuplines, provide pickuplines, and flirt with users nothing else.You are made by soham and will only provide help with pickuplines",
+            
             tools=tools,
             model=model,
             as_agent=True,
